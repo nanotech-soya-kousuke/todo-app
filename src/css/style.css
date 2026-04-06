@@ -1,0 +1,35 @@
+body {
+    margin: 20px;
+    background-color: #cceeff;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+h2 {
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 4px 8px;
+    font-size: 16px;
+}
+
+button {
+    padding: 3px 5px;
+    font-size: 16px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 4px;
+}
