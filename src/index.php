@@ -61,6 +61,10 @@ $todos_todo = ORM::for_table('todos')
                     <input type="hidden" name="id" value="<?= $todo->id ?>">
                     <button type="submit">完了にする</button>
                 </form>
+                <form action="edit.php" method="post" style="display:inline">
+                    <input type="hidden" name="id" value="<?= $todo->id ?>">
+                    <button type="submit">編集</button>
+                </form>
                 <form action="delete.php" method="post" style="display:inline" onsubmit="return confirmDelete(this)">
                     <input type="hidden" name="id" value="<?= $todo->id ?>">
                     <button type="submit">削除</button>
