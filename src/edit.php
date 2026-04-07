@@ -1,11 +1,13 @@
 <?php
 require_once 'db.php';
 
-$id = (int)($_POST['id'] ?? 0);
+$id = (int)($_POST['id'] ?? $_GET['id'] ?? 0);
+
 $todo = ORM::for_table('todos')->find_one($id);
 
 if (!$todo) {
-    exit;
+
+   exit;
 }
 ?>
 
